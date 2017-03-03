@@ -1,0 +1,16 @@
+1.0      Domain length
+100      Number of cells
+7000     NOTIST
+1        NOPROF
+1.0E-4   TOL
+0.4      CFLCOE
+1.3      GAMMA
+0.001    B
+100.0    Initial density to the left of discontinuity
+0.0      Initial velocity to the left of discontinuity
+100.E+6  Initial pressure to the left of discontinuity
+1.0      Initial density to the right of discontinuity
+0.0      Initial velocity to the right of discontinuity
+0.1E+6   Initial pressure to the right of discontinuity
+0.4      Position of discontinuity
+                                

@@ -3,4 +3,4 @@ COVOLUME : COVOLUME.for COVOLU.INC  CPGAMMA.INC  GAMTOL.INC  GLOBAL.INC  IC.INC 
 
 clean:
 	rm -rf COVOLUME
-	rm -rf *.dat
+	rm -rf pressure.dat velocity.dat density.dat energy.dat
