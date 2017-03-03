@@ -1,5 +1,7 @@
       OPEN(99, file='init.dat')
       READ(99,*) TUBLEN
+      READ(99,*) TV(KT)
+      TV(KT+1)=2.0*TV(KT)
       READ(99,*) M
       READ(99,*) NOTIST
       READ(99,*) NOPROF

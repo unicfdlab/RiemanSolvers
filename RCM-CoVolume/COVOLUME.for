@@ -25,10 +25,10 @@ C     INTERNAL VARIABLES
       DATA NC,TIME,POINTER,TOLTIME/0,0.0,0.5,1.D-06/
       DATA (TV(KT),KT=1,2)/0.0002,0.0004/
 C     READ INITIAL DATA
+      KT=1
       INCLUDE 'READIC.INC'
       CALL ICDATA(M,TUBLEN,DX,GAMMA,D,U,P)
       CALL VDCK12(RN,NOTIST)
-      KT=1
 C     COMMENCE TIME STEPPING 
       DO 0001 N=1,NOTIST 
 C        REFLECTING BOUNDARY CCMDITIONS APPLIED 
@@ -86,10 +86,10 @@ C        UPDATING COMPLETED
             CALL OUTPUT(TIME,M,NC,NOPROF,GM1,D,U,P,B) 
             IF(NC.EQ.0)THEN 
                WRITE(6,*)'JOB FINISHED OK'
-              STOP 
-            ENDIF 
-            KT=KT+1 
-         ENDIF 
+              STOP
+            ENDIF
+            KT=KT+1
+         ENDIF
  0001 CONTINUE
 C     TIME STEPPING COMPLETED 
       END
