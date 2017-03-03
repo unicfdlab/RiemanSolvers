@@ -1,0 +1,8 @@
+      DL0=IC_DL0
+      UL0=IC_UL0
+      PL0=IC_PL0
+      DR0=IC_DR0
+      UR0=IC_UR0
+      PR0=IC_PR0
+C     PLACE OF DISCONTINUITY
+      X0=IC_X0
